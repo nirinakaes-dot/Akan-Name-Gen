@@ -8,7 +8,7 @@
 }
 .description{
     border: #1d1716;
-    padding: 5%;
+    padding: 0%;
 }
 .flag{
     align-items: center;
@@ -43,5 +43,5 @@
 }
 .form{
     display: flex;
-    
+
 }
