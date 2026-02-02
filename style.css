@@ -1,0 +1,38 @@
+.Intro{
+    background-color: #1d1716;
+    color: #faebd7;
+    padding: 5%;
+    justify-content: center;
+    align-content: center;
+
+}
+.description{
+    border: #1d1716;
+    padding: 5%;
+}
+.flag{
+    align-items: center;
+    justify-items: center;
+}
+.ghana{
+    align-items: center;
+}
+.body{
+    background-color: #402a23;
+    padding: 0%;
+    margin: 0;
+
+
+}
+.name{
+    background-color: #a55233;
+    padding: 5%;
+}
+.footer{
+    background-color: #f3bc77;
+    padding: 3%;
+    color: #1d1716;
+}
+.image{
+    width: 10git00;
+}
