@@ -1,69 +1,53 @@
-//Give variable to male names
- const maleNames = 
-[Kwasi,Kwadwo,	Kwabena ,Kwaku, Yaw,Kofi,Kwame]
+//GIVING THE MALE AND FAMALE NAMES A VARIABLE
+const maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+const femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-//Give a variable to all Female Names
-const femaleNames=
-[ Akosua,Adwoa,Abenaa,Akua,Yaa,	Afua,Ama]
+const sub = document.getElementById("btn1");
 
-const sub = document.getElementById("btn1")
+sub.addEventListener("click", function (event) {
+  event.preventDefault();
+//GIVE DAY A VARIABLE
 
-sub.addEventListener("submit", function(event)  {
-    event.preventDefault();
-    
-    //Assign variables to Days
-let DD= parseInt(document.getElementById("Birth Day"))
+  const DD = parseInt(document.getElementById("BirthDay").value);
 
-//Assign Variables to Months
-let MM=parseInt(document.getElementById("Birth Month"))
+  //GIVE MONTH A VARIABLE
+  const MM = parseInt(document.getElementById("BirthMonth").value);
 
-//Assign Variable to Years
-let YEAR=parseInt(document.getElementById("Birth Year"))
+  //GIVE YEAR A VARIABLE
+  const YEAR = parseInt(document.getElementById("BirthYear").value);
 
-//Assign Variable to Display
-let Display=( document.getElementById("resultDisplay"))
+  //GIVE GENDER A VARIABLE
+  const gender = document.getElementById("gender").value;
 
-//Split the Year into two
+  const resultDisplay = document.getElementById("resultDisplay");
+//VALIDATION FOR DAY
+  if (!DD || DD < 1 || DD > 31) {
+    resultDisplay.innerHTML = "Please enter a valid birth day (1–31)";
+    return;
+  }
+// VALIDATION FOR MONTH
+  if (!MM || MM < 1 || MM > 12) {
+    resultDisplay.innerHTML = "Please enter a valid birth month (1–12)";
+    return;
+  }
 
-let CC= parseInt(YEAR.slice
-    (0,2));
+  // VALIDATION FOR YEAR
+  if (!YEAR) {
+    resultDisplay.innerHTML = "Please enter a valid birth year";
+    return;
+  }
 
-let YY= parseInt(YEAR.slice(2,4));
+  const birthDate = new Date(YEAR, MM - 1, DD);
 
- 
- //Validate date
- if(DD <=0 || DD  >31){
-    alert(Enter a valid date between 1-31)
- }
+  const day = birthDate.getDay();
+//VARIABLE FOR DAYS
+  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
+  const akanName =
+    gender === "male" ? maleNames[day] : femaleNames[day];
 
-//Validate month
-if(MM <=0 || MM>12){
-    alert(Enter a valid month between 1-12)
-}
-//Add a variable for days
-const dayOfTheWeek=[
-    Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
-]
-//Calculate day
- const Day=((4CC ​− 2× CC − 1)+(45 × YY​)+(1026 × (MM +1 )​)+DD ) %7
-
-//  document.querySelector(`[data-action="generate"]`).addEventListener
-//  (`click`, "akanName")
-
-
-//Determining the day
-let akanName=""
-
-if ( gender=="male") {
-    akanName = maleNames[Day] 
-} else {
-    akanName = femaleNames[Day]
-}
-
-//Display result
-document.querySelector("#resultDisplay").innerText= `Your AkanName is"+ ${akanName}`;
- 
+    //DISPLAY RESULTS
+   resultDisplay.innerHTML =
+    `You were born on <strong>${days[day]}</strong>.<br>
+     Your Akan name is <strong>${akanName}</strong>.`;
 });
-
-
