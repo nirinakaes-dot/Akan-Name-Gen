@@ -30,7 +30,7 @@ Then a gentle warning appears, guiding them to try again
 ## Contact Information
 For any inquiries or contribution to this project:<br>
 Email: Nirinakaes@gmail.com <br>
-GitHub:
+GitHub: https://github.com/nirinakaes-dot
 
 
  ## License
