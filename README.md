@@ -33,9 +33,14 @@ Email: Nirinakaes@gmail.com <br>
 GitHub: https://github.com/nirinakaes-dot
 
 
- ## License
+ ## License and  Copyright information
 
-This project is open-source and available under the MIT License
+This project is open-source and available under the MIT License.<br>
+
+© 2026 Your Name. All rights reserved.
+
+This project, Akan Name Generator, is protected under copyright law.
+No part of this project may be reproduced, distributed, or modified without prior permission from the author, except where permitted by law.
 
 ## Visit Our Website
 
