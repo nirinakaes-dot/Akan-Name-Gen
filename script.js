@@ -14,7 +14,9 @@ Validate month
 if(month <=0 || >12){
     alert(Enter a valid month)
 
+
 }
+
 
 
 
