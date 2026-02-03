@@ -16,7 +16,7 @@ if(month <=0 || >12){
 }
 
 
-let DD= parseInt(document.getElementById("Birth day"))
+let DD= parseInt(document.getElementById("Birth "))
 
 
 let MM=parseInt(document.getElementById("Birth Month"))
