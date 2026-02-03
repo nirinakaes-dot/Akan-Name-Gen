@@ -43,4 +43,5 @@ This project, Akan Name Generator, is protected under copyright law.
 No part of this project may be reproduced, distributed, or modified without prior permission from the author, except where permitted by law.
 
 ## Visit Our Website
+https://nirinakaes-dot.github.io/Akan-Name-Gen/
 
